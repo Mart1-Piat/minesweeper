@@ -1,0 +1,22 @@
+﻿<Window x:Class="MinesweeperWPF.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MinesweeperWPF"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="220" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Grid Size (e.g. 10 will result in a 10x10 grid):" />
+            <TextBox x:Name="TXTGridSize" Width="100" />
+
+            <Label Content="Number of Mines:"  Width="280"/>
+            <TextBox x:Name="TXTNbMines" Width="100" />
+
+            
+            <Button x:Name="BTNNewGame" Content="New Game" Click="BTNNewGame_Click" Margin="0,20,0,0" Width="100" HorizontalAlignment="Center"></Button>
+            <Button x:Name="BTNCancel" Content="Cancel" Click="BTNCancel_Click" Margin="0,5,0,0" Width="100"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
